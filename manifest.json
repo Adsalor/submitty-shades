@@ -1,0 +1,13 @@
+{
+    "name": "Submitty Shades",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "A low-effort chromium extension to stop Submitty from killing graders' eyes",
+    "icons": {
+        "128":"icons/welder_submitty128x128.png"
+    },
+    "content_scripts": [{
+        "matches":["https://submitty.cs.rpi.edu/*"],
+        "js":["override.js"]
+    }]
+  }
